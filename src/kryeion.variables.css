@@ -1,5 +1,9 @@
 /* Variables organized by ITCSS layers with scoping */
 
+@font-face {
+  
+}
+
 /**!
  * SETTINGS
  */
@@ -42,6 +46,9 @@ body {
   --baseGlobalCaretUp: "\f0d8";
   --baseGlobalCaretLeft: "\f0d9";
   --baseGlobalCaretRight: "\f0da";
+  --baseGlobalFontSize: 100%;
+  --baseGlobalFontLineHeight: 1.5;
+  --baseGlobalFontFamily: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", system-ui, sans-serif
 }
 
 /**!
