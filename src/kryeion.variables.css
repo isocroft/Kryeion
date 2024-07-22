@@ -1,0 +1,77 @@
+/* Variables organized by ITCSS layers with scoping */
+
+/**!
+ * SETTINGS
+ */
+:root {
+  --resetGlobalFgColor: #000000;
+  --resetGlobalBgColor: #FFFFFF;
+  --resetOutlineColor: #CBCBCB;
+  --resetOutlineWidth: 0.05cm;
+  --resetOutline: 0.05cm dotted #CBCBCB;
+  --resetHrTopBorderColor: #CCCCCC;
+  --resetHrTopBorder: 1px solid #CCCCCC;
+  --resetHrMargin: 1em 0;
+  --resetDefaultBoxDimension: 1px;
+  --resetFontFamilyIE: 'Courier New';
+  --resetTextStrokeWidth: 0.013rem;
+  --resetFormElementBorderWidth: 0.063rem;
+  --resetFormElementFgColor: #F2000B;
+  --resetFormElementBorder: 0.063rem solid #F2000B;
+  --resetFormElementPlaceholderColor: #E4E4E4;
+  --resetDefaultGapWidth: 1em;
+  --resetDefaultFontSize: 1em;
+  --resetInsBgColor: #FFFF99;
+  --resetMarkBgColor: #FFFF00;
+  --resetSubBottomOffsetStatic: -0.25em;
+  --resetLegendLeftOffsetStatic: -0.438rem;
+  --resetDefaultFormElementBgColor: #777777;
+  --resetDefaultWidgetDimension: 16px;
+  --resetDefaultSvgIconDimension: 24px;
+  --resetdefaultBorderHidden: 1px solid transparent;
+  --resetBorderColor: #BDBDBD;
+}
+
+/**!
+ * GENERICS
+ */
+body {
+  --baseGlobalFgColor: #FFFFFF;
+  --baseGlobalFontIcon: 'FontAwesome';
+  --baseGlobalCaretDown: "\f0d7";
+  --baseGlobalCaretUp: "\f0d8";
+  --baseGlobalCaretLeft: "\f0d9";
+  --baseGlobalCaretRight: "\f0da";
+}
+
+/**!
+ * ELEMENTS
+ */
+.sticky {
+  --utilityTopOffsetSticky: 0.625rem;
+}
+
+.full-screener {
+  --utilityFullscreenBgColor: rgba(0, 0, 0, 0.32);
+}
+
+[data-combobox] {
+  --utilityComboTextIndent: 0.063rem;
+  --utilityComboBorder: 0.063rem solid #BDBDBD;
+  --utilityComboTopOffsetAbsolute: 0.188rem;
+  --utilityComboAfterPseudoBoxDimension: 0.125rem;
+  --utilityComboPadding: 0 0.875rem 0.063rem 0;
+  --utilityComboFgColor: #FFFFFF;
+  --utilityComboBgColor: #A4A4A4;
+  --utilityComboBeforePseudoFgColor: #A424BA;
+  --utilityComboBeforePseudoTextIndent: 0.375rem;
+}
+
+/**!
+ * OBJECTS
+ */
+
+
+/**!
+ * COMPONENTS
+ */
