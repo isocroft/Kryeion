@@ -54,6 +54,17 @@ HTMLSpanElement.prototype.getPseudoStyle = (function (nonceValue) {
 
 !function (win, doc) {
 
+  var conditional = doc.querySelector('link.conditional[rel="prefetch"][as="style"]');
+  var testElem = doc.createElement('div');
+
+  if (conditional) {
+    if (testElem.style.flex !== undefined && testElem.style.flexFlow !== undefined) {
+      conditional.setAttribute('href', '://cdn.jsdelivr.net/../flex-layout.css');
+    } else {
+      conditional.setAttribute('href', '://cdn.jsdelivr.net/../float-layout.css');
+    }
+  }
+
   /*!
    * css-var-polyfill.js - v1.2
    *
