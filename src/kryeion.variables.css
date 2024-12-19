@@ -1,19 +1,43 @@
 /* Variables organized by ITCSS layers with scoping */
 
+/* @NOTE: There might be some performance hits with the way CSS variables are setup here */
+
 /**!
  * SETTINGS
  */
 
 :root {
-  --settingsCustomSecondaryWoff2FontUrl: url("https://github.com/JulietaUla/Montserrat/raw/master/fonts/webfonts/Montserrat-Regular.woff2") fromat('woff2');
+  --settingsCustomSecondaryWoff2FontUrl: url("https://github.com/JulietaUla/Montserrat/raw/master/fonts/webfonts/Montserrat-Regular.woff2") format('woff2');
   --settingsCustomSecondaryWoffFontUrl: url("https://github.com/JulietaUla/Montserrat/raw/master/fonts/webfonts/Montserrat-Regular.woff") format('woff');
   --settingsCustomPrimaryFontName: 'Page Sans';
   --settingsCustomSecondaryFontName: 'Montserrat';
   --settingsFontNormal: normal;
-  --settingsFontweightSemibold: 300;
-  --settingsFontweightBold: 600;
-  --settingsFontweightBolder: 700;
-  --settingsFontweightBoldest: 900;
+  --settingsFontweightLighter: 200;
+  --settingsFontweightLight: 300;
+  --settingsFontweightNormal: 400;
+  --settingsFontweightMedium: 500;
+  --settingsFontweightSemiBold: 600;
+  --settingsFontweightBold: 700;
+  --settingsFontweightBolder: 900;
+  --settingsFontsize-2: 0.125rem;
+  --settingsFontsize-4: 0.25rem;
+  --settingsFontsize-6: 0.375rem;
+  --settingsFontsize-8: 0.5rem;
+  --settingsFontsize-12: 0.75rem;
+  --settingsFontsize-16: 1rem;
+  --settingsFontsize-20: 1.25rem;
+  --settingsFontsize-24: 1.5rem;
+  --settingsFontsize-28: 1.75rem;
+  --settingsFontsize-32: 2rem;
+  --settingsFontsize-36: 2.25rem;
+  --settingsFontsize-40: 2.5rem;
+  --settingsFontsize-44: 2.75rem;
+  --settingsFontsize-48: 3rem;
+  --settingsFontsize-64: 4rem;
+  --settingsFontsize-80: 5rem;
+  --settingsFontsize-96: 6rem;
+  --settingsFontsize-112: 7rem;
+  --settingsFontsize-128: 8rem;
   --resetGlobalFgColor: #000000;
   --resetGlobalBgColor: #FFFFFF;
   --resetOutlineColor: #CBCBCB;
@@ -60,8 +84,8 @@
   font-family: var(--settingsCustomPrimaryFontName);
   font-display: swap;
   font-style: normal;
-  font-weight:  var(--settingsFontweightNormal);
-  src:  local('Verdana'), local('Arial'), local(sans-serif);
+  font-weight: var(--settingsFontweightNormal);
+  src: local('Verdana'), local('Arial'), local(sans-serif);
 }
 
 /* CUSTOM SECONDARY FONT */
@@ -78,6 +102,21 @@
  * GENERICS
  */
 body {
+  --baseGlobalEasingLinear: cubic-bezier(0, 0, 1, 1);
+  --baseGlobalEasingEaseIn: cubic-bezier(0.7, 0.1, 0.75, 0.9);
+  --baseGlobalEasingEaseOut: cubic-bezier(0.16, 1, 0.3, 1);
+  --baseGlobalEasingEaseInOut: cubic-bezier(0.6, 0, 0.2, 1);
+  --baseGlobalDuration-0: 0ms;
+  --baseGlobalDuration-75: 75ms;
+  --baseGlobalDuration-200: 200ms;
+  --baseGlobalDuration-300: 300ms;
+  --baseGlobalDuration-400: 400ms;
+  --baseGlobalDuration-500: 500ms;
+  --baseGlobalDuration-600: 600ms;
+  --baseGlobalDuration-700: 700ms;
+  --baseGlobalDuration-800: 800ms;
+  --baseGlobalDuration-900: 900ms;
+  --baseGlobalDuration-1000: 1s;
   --baseGlobalFgColor: #FFFFFF;
   --baseGlobalFontIcon: 'FontAwesome';
   --baseGlobalCaretDown: "\f0d7";
@@ -101,8 +140,8 @@ body {
 }
 
 [data-combobox] {
-  --utilityComboTextIndent: 0.063rem;
-  --utilityComboBorder: 0.063rem solid #BDBDBD;
+  --utilityComboTextIndent: 1.008px;
+  --utilityComboBorder: 1.008px solid #BDBDBD;
   --utilityComboTopOffsetAbsolute: 0.188rem;
   --utilityComboAfterPseudoBoxDimension: 0.125rem;
   --utilityComboPadding: 0 0.875rem 0.063rem 0;
@@ -110,11 +149,11 @@ body {
   --utilityComboBgColor: #A4A4A4;
   --utilityComboBeforePseudoFgColor: #A424BA;
   --utilityComboAfterPseudoFontSize: 60%;
-  --utilityComboBeforePseudoTextIndent: 0.375rem;
+  --utilityComboBeforePseudoTextIndent: 6px;
 }
 
 [data-menubox] {
-  --utilityMenuBoxPadding: 10px 5px;
+  --utilityMenuBoxPadding: 0.625rem 0.3125rem;
 }
 
 /**!
